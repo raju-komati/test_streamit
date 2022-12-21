@@ -21,4 +21,4 @@ e_columns = st.number_input('Select Number of Columns:',1,10,3)
 
 st.write(emoji1, emoji2, emoji3) # this works successfully
 
-st.write((emoji1, emoji2, emoji3) * e_columns))[:e_columns])
+st.write((emoji1, emoji2, emoji3) * e_columns)[:e_columns]))
