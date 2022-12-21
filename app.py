@@ -19,5 +19,5 @@ emoji3 = st.select_slider('Select emoji 3:', options = df_emoji['shortcodes'], v
 
 e_columns = st.number_input('Select Number of Columns:',1,10,3)
 
-st.write([emoji for emoji in (emoji1, emoji2, emoji3)]) # this works successfully
+st.write(*((emoji1, emoji2, emoji3) * e_columns)[:e_columns])
 
