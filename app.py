@@ -8,8 +8,8 @@ resp = requests.get(
 json = resp.json()
 codes, emojis = zip(*json.items())
 df_emoji = pd.DataFrame({
-    'Emojis': emojis,
-    'Shortcodes': [f':{code}:' for code in codes],
+    'emojis': emojis,
+    'shortcodes': [f':{code}:' for code in codes],
 })
 
 emoji1 = st.select_slider('Select emoji 1:', options = df_emoji['shortcodes'], value=':sunglasses:')
